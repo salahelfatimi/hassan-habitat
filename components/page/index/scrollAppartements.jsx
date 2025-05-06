@@ -89,26 +89,26 @@ const fakeAppartements = [
                                     src={appartement.images[0].url}
                                     width={1920}
                                     height={1080}
-                                    className="w-[25rem] lg:min-w-[30rem] object-cover rounded-3xl border-4 border-secondary"
+                                    className="w-[25rem] lg:min-w-[30rem] object-cover rounded-3xl border-4 border-white"
                                     alt={`Image of ${appartement.type}`}
                                 />
                                 <div className="mt-4 font-primary px-2">
                                     <div className=' flex flex-col lg:flex-row lg:justify-between lg:items-center gap-2'>
-                                        <p className=' text-2xl'>{appartement.prix_total} € / Mois</p>
-                                        <div className=' text-xs lg:text-sm *:bg-secondary *:text-white *:px-2 *:py-1 *:rounded-4xl flex flex-row gap-2 font-medium'>
+                                        <p className=' text-2xl text-white font-medium'>{appartement.prix_total} € / Mois</p>
+                                        <div className=' text-xs lg:text-sm *:bg-white *:text-secondary *:px-2 *:py-1 *:rounded-4xl flex flex-row gap-2 font-medium ' >
                                             <p>{appartement.surface}</p>
                                             <p>{appartement.capacite}</p>
                                             <p>Étage : {appartement.etage}</p>
 
                                         </div>
                                     </div>
-                                    <h3 className="text-2xl font-semibold pt-2">{appartement.type}</h3>
+                                    <h3 className="text-2xl font-semibold pt-2 text-white">{appartement.type}</h3>
                                 </div>
                             </div>
                         ))}
                     </div>
                     <div className='flex items-center justify-center pt-8'>
-                        <Link href={'#'} className=' bg-secondary py-3 px-6  w-fit font-primary font-medium rounded-4xl text-white hover:text-secondary border-secondary border-2 hover:bg-white duration-700 capitalize'>Voir tous les appartements</Link>
+                        <Link href={'#'} className=' bg-white py-2 px-6  w-fit font-primary font-medium rounded-4xl text-secondary hover:text-white border-white border-2 hover:bg-secondary duration-700 capitalize'>Voir tous les appartements</Link>
                     </div>
                 </div>
             </div>

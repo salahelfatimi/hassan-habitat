@@ -4,6 +4,7 @@ import Link from "next/link";
 import SactionNumbers from "./sactionNumbers";
 import Appartements from "./appartements";
 import Faq from "@/components/tools/faq";
+import EquipementsSection from "./equipements";
 
 export default function Page(){
     return(
@@ -16,7 +17,7 @@ export default function Page(){
                 <div className=" z-20 flex p-4 flex-col gap-4 items-center justify-center container mx-auto absolute inset-0">
                     <h1 className=" text-center text-xl lg:text-5xl font-bold font-primary uppercase text-white ">Bienvenue à la Résidence Eden Marrakech</h1>
                     <p className="text-center text-sm text-white font-primary">Située dans un cadre calme et privilégié, la Résidence Eden Marrakech propose à la location 50 appartements modernes et confortables .</p>
-                    <Link href={'#'} className=" bg-secondary text-white font-primary px-6 py-3 text-sm rounded-full font-semibold uppercase hover:bg-transparent border-2 border-secondary hover:border-white hover:text-white duration-700 flex items-center justify-center">Découvrez nos appartements<ChevronRight /></Link>
+                    <Link href={'#'} className=" bg-secondary text-white font-primary px-6 py-2 text-sm rounded-full font-semibold uppercase hover:bg-transparent border-2 border-secondary hover:border-white hover:text-white duration-700 flex items-center justify-center">Découvrez nos appartements<ChevronRight /></Link>
                 </div>
                 <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center justify-center gap-2">
                     <Mouse size={40} className=" stroke-white w-24 animate-bounce" />                    
@@ -26,8 +27,12 @@ export default function Page(){
             <div>
                 <SactionNumbers/>
             </div>
+            <div>
+                <EquipementsSection/>
+            </div>
+           
             <Appartements/>
-            <div className=" relative py-20 overflow-hidden h-[70vh] lg:m-20 shadow-2xl lg:rounded-4xl ">
+            <div className=" relative py-10 overflow-hidden h-[70vh] lg:m-20 shadow-2xl lg:rounded-4xl ">
                 <div className="absolute inset-0 z-0">
                     <Image src="/img/appartementsCover.jpeg" layout="fill" objectFit="cover" className=" h-[70vh]" quality={50}  alt="Eco Vert Europé" title="Eco Vert Europé" />
                     <div className="absolute inset-0 bg-black opacity-60"></div> 

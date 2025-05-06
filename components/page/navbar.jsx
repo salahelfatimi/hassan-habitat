@@ -75,7 +75,7 @@ export default function Navbar() {
     const ItemsNavbar = [
         { name: 'Accueil', link: '/' },
         { name: 'Nos Appartements', link: '/nos-appartements' },
-        { name: 'Équipements', link: '/Équipements' },
+        // { name: 'Équipements', link: '/Équipements' },
         { name: 'Blog', link: '/blogs' },
         { name: 'À propos', link: '/a-propos' },
         { name: 'Contactez-nous', link: '/contactez-nous' },
@@ -97,7 +97,7 @@ export default function Navbar() {
             </div>
             <div ref={navbarPhoneRef} className="fixed z-50 top-0 left-0 w-full px-8 lg:pt-12 py-2 lg:hidden block ">
                     <div className="flex flex-row gap-4 items-center justify-between ">
-                        <Image src={logoSrc} width={500} height={500} className="w-16" alt="la Résidence Eden Marrakech" title="la Résidence Eden Marrakech" />
+                        <Image src={logoSrc} width={500} height={500} className="w-20" alt="la Résidence Eden Marrakech" title="la Résidence Eden Marrakech" />
                         <div onClick={toggleMobileMenu} className="bg-secondary p-1">
                             <Menu className="stroke-white" size={35} />
                         </div>
